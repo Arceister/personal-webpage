@@ -12,7 +12,7 @@ const Footer: FC = () => {
       </div>
       <div className="w-full bg-black py-4 px-6 flex justify-around text-white">
         {footerSocials.map((footer) => (       
-          <div>
+          <div key={footer.name}>
             <div 
               className="text-4xl hover:text-slate-600 cursor-ne-resize"
               onClick={() => window.open(footer.link, '_blank')}
