@@ -1,6 +1,7 @@
 import Head from "next/head";
+import { FC } from "react";
 
-const Seo = () => {
+const Seo: FC = () => {
   const meta = {
     title: 'Jagad\'s Personal Webpage',
     description: 'A webpage to publish writings or to express opinions about programming/tech stuffs',
@@ -10,7 +11,7 @@ const Seo = () => {
 
   return (
     <Head>
-      <title>Jagad's Personal Webpage</title>
+      <title>Jagad&apos;s Personal Webpage</title>
       <meta content={meta.description} name="description" />
       <meta name="robots" content={meta.robots} />
       <meta property="og:type" content={meta.type} />

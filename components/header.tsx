@@ -18,12 +18,14 @@ const Header: FC = () => {
               onClick={() => {setActiveIndicator(0)}}>
               Home
             </Link>
-            <Link href='/' 
+            <Link 
+              href='/blog' 
               className={`block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4 ${activeCondition(1)}`}
               onClick={() => {setActiveIndicator(1)}}>
               Blog
             </Link>
-            <Link href='/' 
+            <Link 
+              href='/projects' 
               className={`block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4 ${activeCondition(2)}`}
               onClick={() => {setActiveIndicator(2)}}>
               Projects
