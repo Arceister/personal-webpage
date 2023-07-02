@@ -7,7 +7,7 @@ import { getStaticPaths } from './[slug]'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black h-screen'>
       <Header />
       <Main />
       <Footer />
