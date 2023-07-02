@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
-import Footer from '../components/footer'
-import Header from '../components/header'
 import Main from '../components/pages/main'
-import { getStaticPaths } from './[slug]'
+import Seo from '../components/seo'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-black h-screen'>
-      <Header />
+    <div>
+      <Seo />
       <Main />
-      <Footer />
     </div>
   )
 }
