@@ -6,7 +6,9 @@ const Seo: FC = () => {
     title: 'Jagad Personal Webpage',
     description: 'Jagad Nabil Tuah Imanda personal webpage.',
     type: 'website',
-    robots: 'follow, index'
+    robots: 'follow, index',
+    siteName: 'imandajagad.dev',
+    url: 'https://imandajagad.dev'
   }
 
   return (
@@ -17,6 +19,8 @@ const Seo: FC = () => {
       <meta property="og:type" content={meta.type} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
+      <meta property="og:site_name" content={meta.siteName} />
+      
     </Head>
   )
 }
