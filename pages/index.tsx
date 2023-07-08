@@ -4,7 +4,7 @@ import Seo from '../components/seo'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className='bg-white dark:bg-black'>
       <Seo />
       <Main />
     </div>
