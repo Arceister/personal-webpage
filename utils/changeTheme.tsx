@@ -9,7 +9,7 @@ export const changeTheme = ({
 }: ChangeThemeProps) => {
     if (theme === "dark") {
         setTheme("light")
-    } else if (theme === "light") {
+    } else {
         setTheme("dark")
     }
 }

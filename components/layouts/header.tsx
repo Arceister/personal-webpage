@@ -1,23 +1,10 @@
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
-import { useTheme } from 'next-themes';
-import { MdLightMode, MdDarkMode } from "react-icons/md";
-import { changeTheme } from "../../utils/changeTheme";
+import { FC, useState } from "react";
+import ThemeSwitcher from "../themeSwitcher";
 
 const Header: FC = () => {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
   const [activeIndicator, setActiveIndicator] = useState("home")
-
   const activeCondition = (child: string) => activeIndicator === child ? "font-extrabold" : "font-semibold"
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted)
-    return null
 
   return (
     <header className="dark:bg-black">
@@ -33,11 +20,7 @@ const Header: FC = () => {
             </Link>
           ))}
         </div>
-        <div 
-          className="rounded text-2xl sm:text-2xl lg:text-3xl cursor-pointer py-4 sm:p-4 lg:p-0"
-          onClick={() => changeTheme({theme, setTheme})}>
-            {theme === "light" ? <MdDarkMode /> : <MdLightMode />}
-        </div>
+        <ThemeSwitcher />
       </nav>
     </header>
   )
