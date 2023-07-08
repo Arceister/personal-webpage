@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Main: FC = () => {
   return (
-    <div className="py-[10%] mx-[20%] lg:py-[7%] text-slate-900 dark:text-white">
+    <div className="py-[10%] mx-[20%] lg:py-[7%] text-slate-900 text-[#1B1C1E] dark:text-[#FEFEFE]">
       <div>
         <p className="text-xl sm:text-2xl lg:text-3xl font-semibold pb-[1rem]">Hello there!</p>
         <p className="text-2xl sm:text-4xl lg:text-5xl font-bold"><span className="text-lg sm:text-xl lg:text-2xl pr-[5px] lg:pr-[8px] font-normal">I&apos;m</span>Jagad Nabil Tuah Imanda</p>

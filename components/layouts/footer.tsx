@@ -5,12 +5,12 @@ import { Tooltip } from "react-tooltip";
 const Footer: FC = () => {
   return (
     <footer>
-      <div className="w-full dark:bg-black text-center lg:pl-20 lg:pt-4 lg:text-left">
-        <p className="dark:text-white font-light text-2xl">
+      <div className="w-full bg-[#FEFEFE] dark:bg-[#1B1C1E] text-center lg:pl-20 lg:pt-4 lg:text-left">
+        <p className="dark:text-[#FEFEFE] font-light text-2xl">
           Reach me through:
         </p>
       </div>
-      <div className="w-full dark:bg-black py-4 px-6 flex justify-around text-black dark:text-white">
+      <div className="w-full bg-[#FEFEFE] dark:bg-[#1B1C1E] py-4 px-6 flex justify-around text-[#1B1C1E] dark:text-[#FEFEFE]">
         {footerSocials.map((footer) => (       
           <div key={footer.name}>
             <div 

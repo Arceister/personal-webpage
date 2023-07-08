@@ -7,14 +7,14 @@ const Header: FC = () => {
   const activeCondition = (child: string) => activeIndicator === child ? "font-extrabold" : "font-semibold"
 
   return (
-    <header className="dark:bg-black">
+    <header className="bg-[#FEFEFE] dark:bg-[#1B1C1E]">
       <nav className="flex justify-center lg:justify-between flex-wrap sm:p-3 lg:p-5">
         <div className="flex justify-around sm:text-xl lg:text-2xl w-[80%] sm:w-[85%] lg:w-[90%]">
           {NavbarChilds.map(item => (
             <Link
               key={item.key}
               href={item.link}
-              className={`block mt-4 lg:inline-block lg:mt-0 text-slate-700 hover:text-black dark:text-slate-200 dark:hover:text-white mr-4 ${activeCondition(item.key)}`}
+              className={`block mt-4 lg:inline-block lg:mt-0 text-slate-700 hover:text-[#1B1C1E] dark:text-slate-200 dark:hover:text-white mr-4 ${activeCondition(item.key)}`}
               onClick={() => {setActiveIndicator(item.key)}}>
               {item.name}
             </Link>
