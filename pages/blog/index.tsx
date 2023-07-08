@@ -1,12 +1,12 @@
 import { NextPage } from "next";
 import Seo from "../../components/seo";
-import UnderConstruction from "../../components/pages/underConstruction";
+import BlogPlaceholder from "../../components/pages/blogPlaceholder";
 
 const Blog: NextPage = () => {
   return (
     <div>
       <Seo />
-      <UnderConstruction />
+      <BlogPlaceholder />
     </div>
   )
 }
