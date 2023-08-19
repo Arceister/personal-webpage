@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 
 const Footer: FC = () => {
   return (
-    <footer>
+    <footer className="fixed bottom-0 left-0 right-0">
       <div className="w-full bg-[#FEFEFE] dark:bg-[#1B1C1E] text-center lg:pl-20 lg:pt-4 lg:text-left">
         <p className="dark:text-[#FEFEFE] font-light text-2xl">
           Reach me through:
