@@ -1,12 +1,5 @@
 import { FC } from "react";
-
-type CardItemProps = {
-  data: {
-    link: string
-    title: string
-    description: string
-  }
-}
+import { CardItemProps } from "./types";
 
 const CardItem: FC<CardItemProps> = ({data}: CardItemProps) => {
   return (

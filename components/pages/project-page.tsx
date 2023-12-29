@@ -1,6 +1,6 @@
 import { FC } from "react"
 
-const UnderConstruction: FC = () => {
+const ProjectPage: FC = () => {
   return (
     <div className="text-center text-[#1B1C1E] dark:text-[#FEFEFE] py-[2%] mx-[20%]">
       <p className="text-3xl font-semibold">Projects</p>
@@ -8,4 +8,4 @@ const UnderConstruction: FC = () => {
   )
 }
 
-export default UnderConstruction;
+export default ProjectPage;

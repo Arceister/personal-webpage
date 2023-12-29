@@ -1,13 +1,6 @@
 import { FC } from "react";
 import CardItem from "./card-item";
-
-type CardLayoutProps = {
-  data: {
-    link: string
-    title: string
-    description: string
-  }[]
-}
+import { CardLayoutProps } from "./types";
 
 const CardLayout: FC<CardLayoutProps> = ({data}: CardLayoutProps) => {
   return (  
